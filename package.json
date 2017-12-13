@@ -1,0 +1,23 @@
+{
+  "name": "react-fun",
+  "version": "1.0.0",
+  "description": "A simple react app for fun",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "test",
+    "server": "node start-server.js",
+    "client": "node start-client.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "react",
+    "node",
+    "pet-project"
+  ],
+  "author": "guy biton",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "eslint": "^4.5.0"
+  }
+}
