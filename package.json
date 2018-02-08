@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A simple react app for fun",
   "scripts": {
-    //"start": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
     "test": "test",
     "server": "node start-server.js",
