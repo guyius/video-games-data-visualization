@@ -1,24 +1,15 @@
 .App {
-  text-align: center;
-}
+  text-align: center; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.2vw;
+  background-color: gold; }
+  .game-container > .streamer > figure {
+    margin: 0; }
+    .game-container > .streamer > figure > figcaption {
+      max-height: 20px; }
+    .game-container > .streamer > figure > img {
+      width: 100%;
+      height: 240px; }

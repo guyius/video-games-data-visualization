@@ -6,6 +6,7 @@
     "babel-core": "^6.26.0",
     "express": "^4.15.4",
     "fs": "0.0.1-security",
+    "mongodb": "^3.0.1",
     "node-fetch": "^1.7.2"
   },
   "scripts": {

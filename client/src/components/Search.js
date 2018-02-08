@@ -4,29 +4,23 @@ import './Search.css';
 class Search extends Component {
 	constructor() {
 		super();
-		this.state = { companyName: '' };
-
-		this.searchCompany = () => {
-			this.props.onSubmitName(this.state.companyName);
-		};
-
-		this.handleChange = (e) => {
-			this.setState({companyName: e.target.value});
-		};
+		this.state = { characterName: '' };
+		this.searchCharacter = () => this.props.onSubmitName(this.state.characterName);
+		this.handleChange = (e) => this.setState({characterName: e.target.value});
 	}
 
 	render() {
 		return (
 			<div className="search">
 				<div className="search-header">
-					<h2>Search consoles from your favorite companies.</h2>
+					<h2>Search your favorite characters from video games.</h2>
 				</div>
 				<input className="search-input" type="text"
-					   placeholder="Enter company name"
-					   value={this.state.companyName}
+					   placeholder="Enter character name"
+					   value={this.state.characterName}
 					   onChange={this.handleChange}
 				/>
-				<button className="search-button" onClick={this.searchCompany}></button>
+				<button className="search-button" onClick={this.searchCharacter}></button>
 			</div>
 		);
 	}
